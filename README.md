@@ -6,13 +6,18 @@ It allows to drag and drop from a list of possible values (called available choi
 ![Animated gif that demonstrate the user control](https://raw.github.com/MrDesjardins/DragAndDropWebList/master/MultiChoice.gif "Demo")
 
 #How to use it
-1- Download the Nuget package
-2- Add the CSS and Javascript file to your .cshtml
-3- Use the UIHint and the ViewModel class into your ViewModel
-    [UIHint("MultiSelectorExtended")]
-    public MultiSelectorWithSingleValueExtended YourProperty { get; set; }
-4- Inside your controller, do not forget to add possible value to the ViewModel property (For example: YourProperty)
+1. Download the Nuget package
+2. Add the CSS and Javascript file to your .cshtml
+3. Use the UIHint and the ViewModel class into your ViewModel
+
+
+    
+        [UIHint("MultiSelectorExtended")]
+        public MultiSelectorWithSingleValueExtended YourProperty { get; set; }
+ 
+    
+4. Inside your controller, do not forget to add possible value to the ViewModel property (For example: YourProperty)
 
 #Links
-[Example](https://github.com/MrDesjardins/DragAndDropWebList) of how to use it
-[Nuget package](https://www.nuget.org/packages/DragAndDropMultiSelectorList/)
+* [Example](https://github.com/MrDesjardins/DragAndDropWebList) of how to use it
+* [Nuget package](https://www.nuget.org/packages/DragAndDropMultiSelectorList/)
