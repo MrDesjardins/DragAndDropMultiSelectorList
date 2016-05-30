@@ -65,7 +65,9 @@
                             var val = string.IsNullOrEmpty(Model.SelectedItems[i].ExtendedProperty) ? string.Empty : Model.SelectedItems[i].ExtendedProperty;
                             <li class="ui-state-default @iconClass" data-extended-value="@val">
                                 <span class="description">@Model.SelectedItems[i].Description</span>
-                                @Html.HiddenFor(x => Model.SelectedItems[i].ID)
+                                <input type="hidden" id="@string.Concat(controlSelectedItemsPropertyName, "_", i, "__Id")"
+                                       name="@string.Concat(controlSelectedItemsPropertyName, "[", i, "].Id")"
+                                       value="@selectedItem.Id"/>
                             </li>
                         }
                     }
